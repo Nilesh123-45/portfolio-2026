@@ -561,8 +561,6 @@ button {
 }
 
 /* Achievements Section */
-
-/* Achievements Section */
 .misc-row {
   display: flex;
   align-items: flex-start;
@@ -657,7 +655,6 @@ button {
   box-shadow: 3px 3px 0px var(--accent-red); 
 }
 
-
 /* --- OVERRIDE FOR THE MIDDLE ROW (ACADEMICS) --- */
 
 /* 1. Make the middle two badges start perfectly straight */
@@ -692,46 +689,6 @@ button {
     align-self: flex-start;
   }
 }
-/* .achv-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.achv-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem;
-  border: var(--border-thick);
-  background-color: transparent;
-  transition: all 0.2s;
-}
-
-.achv-item:hover {
-  background-color: #fff;
-  box-shadow: 6px 6px 0px var(--text-dark);
-  transform: translate(-2px, -2px);
-}
-
-.achv-info h3 {
-  margin: 0 0 0.5rem 0;
-  font-family: 'Syne', sans-serif;
-  font-size: 1.2rem;
-}
-
-.achv-info p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #444;
-}
-
-.achv-badge {
-  border: 1px solid var(--text-dark);
-  padding: 0.3rem 0.6rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-} */
 
 /* Dark Footer matching the image */
 .dark-footer {
@@ -1032,10 +989,6 @@ button {
   }
 }
 
-
-
-
-
 /* =========================================
    RESPONSIVE DESIGN (MOBILE & TABLET)
    ========================================= */
@@ -1175,14 +1128,39 @@ button {
   }
 }
 
-/* --- FOOTER TEXT MOBILE FIX --- */
+/* --- THE MASTER MOBILE TEXT FIXES --- */
 @media screen and (max-width: 768px) {
+  
+  /* 1. Footer "LET'S BUILD SOMETHING" (Realme Narzo Fix) */
   .footer-heading {
-    font-size: 8.5vw; /* Dialed down so 9-letter words fit perfectly */
+    font-size: 7.2vw; 
     line-height: 1.1;
     width: 100%;
     box-sizing: border-box;
-    overflow-wrap: break-word;
-    padding-right: 15px; /* Extra safety buffer on the right edge */
+    white-space: normal; 
+    word-break: keep-all; 
+    padding-right: 0; 
+  }
+
+  /* 2. Hero Giant Text (Z Fold Fix) */
+  .hero-heading {
+    font-size: 13vw; 
+    line-height: 1.1;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word; 
+    padding-right: 10px; 
+  }
+
+  /* 3. Hero Sub-heading & Project Tags Wrapping Fix */
+  .sub-heading, 
+  .tech-stack,
+  .section-subtext {
+    font-size: 4.5vw; 
+    line-height: 1.5;
+    width: 100%;
+    white-space: normal !important; 
+    box-sizing: border-box;
+    padding-right: 15px;
   }
 }
