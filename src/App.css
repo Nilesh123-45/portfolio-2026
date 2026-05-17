@@ -81,7 +81,6 @@ body {
 }
 
 .logo {
-  /* Update to a serif font to match the original "Swayam Mishra" styling */
   font-family: 'Times New Roman', Times, serif; 
   font-weight: 800;
   font-size: 1.8rem;
@@ -1038,7 +1037,7 @@ button {
 
 @media (max-width: 768px) {
   /* General Section Paddings */
-  .content-section, .about-section, .dark-footer, .navbar {
+  .main-content, .content-section, .about-section, .dark-footer, .navbar {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -1142,14 +1141,18 @@ button {
     padding-right: 0; 
   }
 
-  /* 2. Hero Giant Text (Z Fold Fix) */
+  /* 2. Hero Giant Text (Ultimate Mobile Fix) */
+ /* 2. Hero Giant Text (Ultimate Mobile Fix) */
   .hero-heading {
-    font-size: 13vw; 
-    line-height: 1.1;
+    font-size: 2.3rem !important; /* Forces a fixed, safe size on mobile screens */
+    line-height: 1.2;
     width: 100%;
     box-sizing: border-box;
-    overflow-wrap: break-word; 
-    padding-right: 10px; 
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+    text-align: center;
+    padding: 0 10px; /* Gives a healthy safety buffer on left and right */
   }
 
   /* 3. Hero Sub-heading & Project Tags Wrapping Fix */
