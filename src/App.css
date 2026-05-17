@@ -1178,8 +1178,11 @@ button {
 /* --- FOOTER TEXT MOBILE FIX --- */
 @media screen and (max-width: 768px) {
   .footer-heading {
-    font-size: 12vw; /* This forces the text to scale to the screen width */
+    font-size: 8.5vw; /* Dialed down so 9-letter words fit perfectly */
     line-height: 1.1;
-    word-wrap: break-word; /* Safety net so it wraps instead of cutting off */
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    padding-right: 15px; /* Extra safety buffer on the right edge */
   }
 }
