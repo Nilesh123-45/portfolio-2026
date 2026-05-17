@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@700;800&family=Caveat:wght@600&display=swap');
 
+/* --- MOBILE OVERFLOW FIX --- */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-wrapper {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 :root {
   --bg-color: #f6f5f0;
   --text-dark: #111;
