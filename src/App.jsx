@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 const App = () => {
-  // Initialize state directly with your static project data for lightning-fast hosting
-const [projects, setProjects] = useState([
+  // Static project data with GitHub links completely removed
+  const [projects, setProjects] = useState([
     {
       id: 1,
       title: "Samsung — Digital Commerce & Catalog",
@@ -24,10 +24,9 @@ const [projects, setProjects] = useState([
     }
   ]);
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Controls the hamburger menu
-  const [currentTime, setCurrentTime] = useState(new Date()); // State for the live clock
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
+  const [currentTime, setCurrentTime] = useState(new Date()); 
 
-  // Live IST Clock Tick Effect
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTime(new Date());
@@ -35,12 +34,10 @@ const [projects, setProjects] = useState([
     return () => clearInterval(timer);
   }, []);
 
-  // Toggle Menu Function
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Format time for IST (24-hour clock)
   const timeString = currentTime.toLocaleTimeString('en-IN', {
     timeZone: 'Asia/Kolkata',
     hour12: false,
@@ -52,40 +49,33 @@ const [projects, setProjects] = useState([
   return (
     <div className="portfolio-wrapper">
       
-      {/* --- NEW 2x2 GRID MENU OVERLAY --- */}
       <div className={`menu-overlay ${isMenuOpen ? 'open' : ''}`}>
         
-        {/* Top Close Button */}
         <div className="menu-close-btn" onClick={toggleMenu}>
           <div className="close-line"></div>
           <div className="close-line"></div>
         </div>
 
-        {/* 4 Quadrants Grid */}
         <div className="menu-grid">
           
-          {/* Top Left */}
           <a href="#about" className="menu-quadrant bottom-border right-border" onClick={toggleMenu}>
             <span className="quad-subtext">WHO I AM <span className="arrow">-&gt;</span></span>
             <h2 className="quad-title">ABOUT</h2>
             <span className="quad-desc">Backend Engineer • System Design</span>
           </a>
 
-          {/* Top Right */}
           <a href="#work" className="menu-quadrant bottom-border" onClick={toggleMenu}>
             <span className="quad-subtext">03 PROJECTS <span className="arrow">-&gt;</span></span>
             <h2 className="quad-title">WORK</h2>
             <span className="quad-desc">Samsung • Expedia • TapQwik</span>
           </a>
 
-          {/* Bottom Left */}
           <a href="#skills" className="menu-quadrant right-border" onClick={toggleMenu}>
             <h2 className="quad-title">SKILLS</h2>
             <span className="quad-subtext">STACK & TOOLS <span className="arrow">-&gt;</span></span>
             <span className="quad-desc">Java • Spring Boot • Kafka • Redis</span>
           </a>
 
-          {/* Bottom Right */}
           <a href="#achievements" className="menu-quadrant" onClick={toggleMenu}>
             <h2 className="quad-title">IMPACT</h2>
             <span className="quad-subtext">WINS & RECOGNITION <span className="arrow">-&gt;</span></span>
@@ -93,7 +83,6 @@ const [projects, setProjects] = useState([
           </a>
         </div>
 
-        {/* Menu Footer */}
         <div className="menu-footer">
           <div className="menu-socials">
             <a href="https://github.com/Nilesh123-45" target="_blank" rel="noreferrer">
@@ -119,7 +108,6 @@ const [projects, setProjects] = useState([
           </div>
         </div>
       </div>
-      {/* --- END MENU OVERLAY --- */}
 
       <nav className="navbar">
         <div className="logo">Nilesh Das.</div>
@@ -185,7 +173,6 @@ const [projects, setProjects] = useState([
 
       <div className="bottom-dashed-line"></div>
       
-      {/* ABOUT SECTION */}
       <section id="about" className="about-section">
         <div className="about-left">
           <h4 className="section-label">ABOUT</h4>
@@ -218,7 +205,6 @@ const [projects, setProjects] = useState([
         </div>
       </section>
 
-      {/* HORIZONTAL SCROLLING MARQUEE SEPARATOR */}
       <div className="marquee-container">
         <div className="marquee-content"> 
           <span>SOFTWARE ENGINEER ✦ SPRING BOOT ✦ MICROSERVICES ✦ EVENT-DRIVEN ARCHITECTURE ✦ KAFKA ✦ REDIS ✦ </span>
@@ -227,7 +213,6 @@ const [projects, setProjects] = useState([
         </div>
       </div>
 
-      {/* SNEAKY INTERACTIVE DIVIDER */}
       <div className="interactive-divider-wrapper">
         <div className="divider-line"></div>
         <div className="expandable-pill">
@@ -238,7 +223,6 @@ const [projects, setProjects] = useState([
         </div>
       </div>
       
-      {/* Dynamic Projects Section */}
       <section id="work" className="content-section">
         <h2>Selected Work</h2>
         <div className="projects-grid">
@@ -247,20 +231,11 @@ const [projects, setProjects] = useState([
               <h3>{project.title}</h3>
               <p className="tech-stack">{project.tech_stack}</p>
               <p>{project.description}</p>
-              <a 
-                href={project.github_link && project.github_link !== '#' ? project.github_link : 'https://github.com/Nilesh123-45'} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="project-link"
-              >
-                github ↗
-              </a>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Skills Section */}
       <section id="skills" className="content-section">
         <h2>Skills & Tools</h2>
         <div className="skills-table">
@@ -319,11 +294,9 @@ const [projects, setProjects] = useState([
         </div>
       </section>
 
-      {/* Achievements Section */}
       <section id="achievements" className="content-section">
         <h2>Impact & Optimization</h2>
         
-        {/* CATEGORY 1: ENTERPRISE PERFORMANCE */}
         <div className="misc-row">
           <div className="misc-category">SYSTEM ARCHITECTURE</div>
           <div className="misc-items">
@@ -344,7 +317,6 @@ const [projects, setProjects] = useState([
           </div>
         </div>
 
-        {/* CATEGORY 2: ACADEMICS & CERTS */}
         <div className="misc-row">
           <div className="misc-category">ACADEMICS</div>
           <div className="misc-items">
@@ -365,7 +337,6 @@ const [projects, setProjects] = useState([
           </div>
         </div>
 
-        {/* CATEGORY 3: PRACTICES & LEADERSHIP */}
         <div className="misc-row">
           <div className="misc-category">ROLES & METHODOLOGY</div>
           <div className="misc-items">
@@ -388,7 +359,6 @@ const [projects, setProjects] = useState([
 
       </section>
 
-      {/* Dark Footer */}
       <footer className="dark-footer">
         <div className="footer-top">
           <h2 className="footer-heading">LET'S BUILD SOMETHING.</h2>
