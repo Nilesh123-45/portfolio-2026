@@ -3,22 +3,25 @@ import './App.css';
 
 const App = () => {
   // Initialize state directly with your static project data for lightning-fast hosting
-  const [projects, setProjects] = useState([
+const [projects, setProjects] = useState([
     {
       id: 1,
       title: "Samsung — Digital Commerce & Catalog",
       tech_stack: "Spring Boot • Kafka • Redis • MongoDB",
-      description: "Developed microservices for product discovery, search, and catalog synchronization. Implemented Redis caching for frequent searches and integrated Kafka for asynchronous updates."    },
+      description: "Developed microservices for product discovery, search, and catalog synchronization. Implemented Redis caching for frequent searches and integrated Kafka for asynchronous updates."
+    },
     {
       id: 2,
       title: "Expedia — Hotel Booking & Reservation",
       tech_stack: "Java 8+ • Spring Boot • Hibernate • Docker",
-      description: "Built REST APIs for hotel search, room availability, and reservations. Accelerated lookups using Redis and managed reservation events via asynchronous Kafka producers and consumers."    },
+      description: "Built REST APIs for hotel search, room availability, and reservations. Accelerated lookups using Redis and managed reservation events via asynchronous Kafka producers and consumers."
+    },
     {
       id: 3,
       title: "Billing & Inventory POS (Legacy)",
       tech_stack: "Spring Boot • React • AWS S3",
-      description: "Engineered a RESTful web application processing high-concurrency transactions with sub-200ms latency. Integrated transactional payment gateways and automated receipt generation."    }
+      description: "Engineered a RESTful web application processing high-concurrency transactions with sub-200ms latency. Integrated transactional payment gateways and automated receipt generation."
+    }
   ]);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Controls the hamburger menu
