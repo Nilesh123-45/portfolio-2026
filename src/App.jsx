@@ -6,23 +6,23 @@ const App = () => {
   const [projects, setProjects] = useState([
     {
       id: 1,
-      title: "Billing & Inventory POS",
-      tech_stack: "Spring Boot • React • AWS S3",
-      description: "Engineered a RESTful web application processing high-concurrency transactions with sub-200ms latency. Integrated transactional payment gateways and automated receipt generation.",
+      title: "Samsung — Digital Commerce & Catalog",
+      tech_stack: "Spring Boot • Kafka • Redis • MongoDB",
+      description: "Developed microservices for product discovery, search, and catalog synchronization. Implemented Redis caching for frequent searches and integrated Kafka for asynchronous updates.",
       github_link: "https://github.com/Nilesh123-45"
     },
     {
       id: 2,
-      title: "Employee Leave Management",
-      tech_stack: "Node.js • React.js • MongoDB",
-      description: "Automated internal HR workflows by transitioning manual tracking to a centralized digital solution. Optimized NoSQL database queries for real-time administrative dashboards.",
+      title: "Expedia — Hotel Booking & Reservation",
+      tech_stack: "Java 8+ • Spring Boot • Hibernate • Docker",
+      description: "Built REST APIs for hotel search, room availability, and reservations. Accelerated lookups using Redis and managed reservation events via asynchronous Kafka producers and consumers.",
       github_link: "https://github.com/Nilesh123-45"
     },
     {
       id: 3,
-      title: "Hospital Management System Core",
-      tech_stack: "Core Java • MySQL • JDBC",
-      description: "Programmed a console-based application to effectively manage, store, and retrieve patient health and billing records, validating core database connectivity.",
+      title: "Billing & Inventory POS (Legacy)",
+      tech_stack: "Spring Boot • React • AWS S3",
+      description: "Engineered a RESTful web application processing high-concurrency transactions with sub-200ms latency. Integrated transactional payment gateways and automated receipt generation.",
       github_link: "https://github.com/Nilesh123-45"
     }
   ]);
@@ -71,28 +71,28 @@ const App = () => {
           <a href="#about" className="menu-quadrant bottom-border right-border" onClick={toggleMenu}>
             <span className="quad-subtext">WHO I AM <span className="arrow">-&gt;</span></span>
             <h2 className="quad-title">ABOUT</h2>
-            <span className="quad-desc">Full-Stack Engineer • System Design</span>
+            <span className="quad-desc">Backend Engineer • System Design</span>
           </a>
 
           {/* Top Right */}
           <a href="#work" className="menu-quadrant bottom-border" onClick={toggleMenu}>
             <span className="quad-subtext">03 PROJECTS <span className="arrow">-&gt;</span></span>
             <h2 className="quad-title">WORK</h2>
-            <span className="quad-desc">Billing POS • Leave Mgmt • Hospital Sys</span>
+            <span className="quad-desc">Samsung • Expedia • TapQwik</span>
           </a>
 
           {/* Bottom Left */}
           <a href="#skills" className="menu-quadrant right-border" onClick={toggleMenu}>
             <h2 className="quad-title">SKILLS</h2>
             <span className="quad-subtext">STACK & TOOLS <span className="arrow">-&gt;</span></span>
-            <span className="quad-desc">Java 21 • Spring Boot • React • AWS</span>
+            <span className="quad-desc">Java • Spring Boot • Kafka • Redis</span>
           </a>
 
           {/* Bottom Right */}
           <a href="#achievements" className="menu-quadrant" onClick={toggleMenu}>
-            <h2 className="quad-title">ACHV.</h2>
+            <h2 className="quad-title">IMPACT</h2>
             <span className="quad-subtext">WINS & RECOGNITION <span className="arrow">-&gt;</span></span>
-            <span className="quad-desc">SIH '24 Finalist • 1000+ LeetCode Views</span>
+            <span className="quad-desc">Sub-200ms Latency • Enterprise Scale</span>
           </a>
         </div>
 
@@ -103,17 +103,17 @@ const App = () => {
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
               github
             </a>
-            <a href="https://www.linkedin.com/in/nileshdasneel" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/nileshdasneil" target="_blank" rel="noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
               linkedin
             </a>
-            <a href="mailto:dasnilesh832@gmail.com">
+            <a href="mailto:nileshdas.work@gmail.com">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               email
             </a>
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" y1="4" x2="20" y2="20"></line><line x1="20" y1="4" x2="4" y2="20"></line></svg>
-              x
+            <a href="tel:+917377544513">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              phone
             </a>
           </div>
           <div className="menu-clock">
@@ -144,23 +144,21 @@ const App = () => {
           </h1>
           
           <p className="sub-heading">
-            Java Backend Developer • Full-Stack Engineer • Building{' '}
+            Software Engineer • Java Backend Developer • Building{' '}
             <a 
-              href="https://github.com/Nilesh123-45" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+              href="#work" 
               className="red-text"
               style={{ textDecoration: 'none' }}
             >
-              POS Systems ↗
+              Enterprise Platforms ↗
             </a>
           </p>
 
           <div className="tags-container">
-            <div className="sticker tag-1">SIH '24 FINALIST ↗</div>
+            <div className="sticker tag-1">3.7 YRS EXPERIENCE ↗</div>
             <div className="sticker tag-2">SPRING BOOT EXPERT ↗</div>
-            <div className="sticker tag-3">LEETCODE ALGORITHMS</div>
-            <div className="sticker tag-4">AWS CLOUD ↗</div>
+            <div className="sticker tag-3">KAFKA & REDIS SCALING</div>
+            <div className="sticker tag-4">MICROSERVICES ↗</div>
           </div>
 
           <div className="actions">
@@ -196,7 +194,7 @@ const App = () => {
           <h4 className="section-label">ABOUT</h4>
           <div className="solid-line"></div>
           <p>
-            I build robust full-stack web applications, design normalized databases, and engineer high-concurrency backend architectures. 
+            I build scalable backend services, optimize database performance, and engineer high-concurrency microservices architectures using event-driven communication. 
           </p>
           <p>
             Off the keyboard, I'm usually shooting and color-grading random moments on my phone to get that perfect frame and picture. I watch a lot of world cinema, hunt for good Indo-Chinese food, and take long solo walks. Annoying my sibling and catching a solid nap fill the rest.
@@ -205,20 +203,20 @@ const App = () => {
         
         <div className="about-right">
           <div className="stat-box bottom-border right-border">
-            <h3>8.95</h3>
-            <p>MCA CGPA</p>
+            <h3>8.26</h3>
+            <p>B.Sc. CGPA</p>
           </div>
           <div className="stat-box bottom-border">
-            <h3>2+</h3>
-            <p>HACKATHONS</p>
+            <h3>3.7+</h3>
+            <p>YEARS EXP.</p>
           </div>
           <div className="stat-box right-border">
-            <h3>3+</h3>
-            <p>PRODUCTS SHIPPED</p>
+            <h3>2+</h3>
+            <p>ENTERPRISE PLATFORMS</p>
           </div>
           <div className="stat-box">
-            <h3>1000+</h3>
-            <p>LEETCODE VIEWS</p>
+            <h3>5+</h3>
+            <p>PRODUCTS SHIPPED</p>
           </div>
         </div>
       </section>
@@ -226,9 +224,9 @@ const App = () => {
       {/* HORIZONTAL SCROLLING MARQUEE SEPARATOR */}
       <div className="marquee-container">
         <div className="marquee-content"> 
-          <span>JAVA BACKEND DEVELOPER ✦ SPRING BOOT ✦ REACT.JS ✦ FULL-STACK DEVELOPER ✦ AWS CLOUD ✦ PROBLEM SOLVER ✦ </span>
-          <span>JAVA BACKEND DEVELOPER ✦ SPRING BOOT ✦ REACT.JS ✦ FULL-STACK DEVELOPER ✦ AWS CLOUD ✦ PROBLEM SOLVER ✦ </span>
-          <span>JAVA BACKEND DEVELOPER ✦ SPRING BOOT ✦ REACT.JS ✦ FULL-STACK DEVELOPER ✦ AWS CLOUD ✦ PROBLEM SOLVER ✦ </span>
+          <span>SOFTWARE ENGINEER ✦ SPRING BOOT ✦ MICROSERVICES ✦ EVENT-DRIVEN ARCHITECTURE ✦ KAFKA ✦ REDIS ✦ </span>
+          <span>SOFTWARE ENGINEER ✦ SPRING BOOT ✦ MICROSERVICES ✦ EVENT-DRIVEN ARCHITECTURE ✦ KAFKA ✦ REDIS ✦ </span>
+          <span>SOFTWARE ENGINEER ✦ SPRING BOOT ✦ MICROSERVICES ✦ EVENT-DRIVEN ARCHITECTURE ✦ KAFKA ✦ REDIS ✦ </span>
         </div>
       </div>
 
@@ -238,7 +236,7 @@ const App = () => {
         <div className="expandable-pill">
           <span className="pill-icon">+</span>
           <div className="scrolling-content">
-            <span>/// LEARN /// UNLEARN /// RELEARN ///</span>
+            <span>/// DESIGN /// BUILD /// SCALE ///</span>
           </div>
         </div>
       </div>
@@ -272,7 +270,9 @@ const App = () => {
           <div className="skill-row">
             <div className="skill-category">LANGUAGES</div>
             <div className="skill-items">
-              <span className="skill-tag">Java</span>
+              <span className="skill-tag">Core Java</span>
+              <span className="skill-tag">Java 8+</span>
+              <span className="skill-tag">Java 21</span>
               <span className="skill-tag">SQL</span>
               <span className="skill-tag">C</span>
               <span className="skill-tag">JavaScript</span>
@@ -280,31 +280,43 @@ const App = () => {
             </div>
           </div>
           <div className="skill-row">
-            <div className="skill-category">FRAMEWORKS</div>
+            <div className="skill-category">FRAMEWORKS & ARCHITECTURE</div>
             <div className="skill-items">
               <span className="skill-tag">Spring Boot</span>
+              <span className="skill-tag">Spring MVC</span>
               <span className="skill-tag">Spring Data JPA</span>
-              <span className="skill-tag">JDBC</span>
-              <span className="skill-tag">Maven</span>
-              <span className="skill-tag">JUnit</span>
-              <span className="skill-tag">Log4j2</span>
+              <span className="skill-tag">Hibernate</span>
+              <span className="skill-tag">Microservices</span>
+              <span className="skill-tag">REST APIs</span>
               <span className="skill-tag">React.js</span>
               <span className="skill-tag">Node.js</span>
-              <span className="skill-tag">Express.js</span>
             </div>
           </div>
           <div className="skill-row">
-            <div className="skill-category">DEVELOPER TOOLS</div>
+            <div className="skill-category">MESSAGING & DATABASES</div>
             <div className="skill-items">
-              <span className="skill-tag">Git & GitHub</span>
-              <span className="skill-tag">IntelliJ IDEA</span>
-              <span className="skill-tag">ECLIPSE</span>
-              <span className="skill-tag">VS Code</span>
-              <span className="skill-tag">Linux</span>
-              <span className="skill-tag">Postman</span>
-              <span className="skill-tag">AWS S3</span>
+              <span className="skill-tag">Apache Kafka</span>
+              <span className="skill-tag">Redis</span>
               <span className="skill-tag">MySQL</span>
               <span className="skill-tag">MongoDB</span>
+              <span className="skill-tag">Database Indexing</span>
+            </div>
+          </div>
+          <div className="skill-row">
+            <div className="skill-category">DEVOPS & TOOLS</div>
+            <div className="skill-items">
+              <span className="skill-tag">AWS (EC2, S3)</span>
+              <span className="skill-tag">Docker</span>
+              <span className="skill-tag">Jenkins CI/CD</span>
+              <span className="skill-tag">Git</span>
+              <span className="skill-tag">Maven</span>
+              <span className="skill-tag">JUnit 5</span>
+              <span className="skill-tag">Mockito</span>
+              <span className="skill-tag">Swagger/OpenAPI</span>
+              <span className="skill-tag">Logback</span>
+              <span className="skill-tag">SonarQube</span>
+              <span className="skill-tag">Jira</span>
+              <span className="skill-tag">Postman</span>
             </div>
           </div>
         </div>
@@ -312,25 +324,25 @@ const App = () => {
 
       {/* Achievements Section */}
       <section id="achievements" className="content-section">
-        <h2>Achievements & Misc</h2>
+        <h2>Impact & Optimization</h2>
         
-        {/* CATEGORY 1: COMPETITIONS */}
+        {/* CATEGORY 1: ENTERPRISE PERFORMANCE */}
         <div className="misc-row">
-          <div className="misc-category">COMPETITIONS</div>
+          <div className="misc-category">SYSTEM ARCHITECTURE</div>
           <div className="misc-items">
             <div className="achv-item">
               <div className="achv-info">
-                <h3>Smart India Hackathon (SIH) 2024</h3>
-                <p>Advanced to the finals, cultivating rapid collaborative problem-solving skills under strict deadlines.</p>
+                <h3>Asynchronous Workflow Reliability</h3>
+                <p>Increased reliability of catalog synchronization and booking statuses by refining Kafka event handling and validation logic.</p>
               </div>
-              <div className="achv-badge">FINALIST</div>
+              <div className="achv-badge">EVENT-DRIVEN</div>
             </div>
             <div className="achv-item">
               <div className="achv-info">
-                <h3>Competitive Coding</h3>
-                <p>Authored complex algorithmic solutions on LeetCode and HackerRank, accumulating 1,000+ views.</p>
+                <h3>API Latency Optimization</h3>
+                <p>Improved catalog, search, and availability API responsiveness through strategic Redis caching and targeted MySQL query and index optimization.</p>
               </div>
-              <div className="achv-badge">1000+ VIEWS</div>
+              <div className="achv-badge">PERFORMANCE</div>
             </div>
           </div>
         </div>
@@ -341,17 +353,17 @@ const App = () => {
           <div className="misc-items">
             <div className="achv-item">
               <div className="achv-info">
+                <h3>B.Sc. Degree</h3>
+                <p>Graduated from Fakir Mohan University, Balasore, Odisha with Grade A.</p>
+              </div>
+              <div className="achv-badge">2023 | 8.26 CGPA</div>
+            </div>
+            <div className="achv-item">
+              <div className="achv-info">
                 <h3>Elite NPTEL Certifications</h3>
                 <p>Earned official certifications in Cloud Computing and Distributed Systems, Management Information System, Industry 4.0 & IoT, and Problem Solving in C.</p>
               </div>
               <div className="achv-badge">IIT KANPUR / KGP</div>
-            </div>
-            <div className="achv-item">
-              <div className="achv-info">
-                <h3>University Paper Research</h3>
-                <p>Authored and presented technical research papers at the university level.</p>
-              </div>
-              <div className="achv-badge">SPEAKER</div>
             </div>
           </div>
         </div>
@@ -362,17 +374,17 @@ const App = () => {
           <div className="misc-items">
             <div className="achv-item">
               <div className="achv-info">
-                <h3>Agile & Test-Driven Development</h3>
-                <p>A fast learner accustomed to building full-stack projects in rapid Agile environments, enforcing strict code reliability through comprehensive JUnit testing.</p>
+                <h3>Agile & CI/CD Practices</h3>
+                <p>Supported Docker-based application packaging, AWS deployments, and Jenkins CI/CD validation to ensure reliable production rollouts.</p>
               </div>
               <div className="achv-badge">PRACTICE</div>
             </div>
             <div className="achv-item">
               <div className="achv-info">
-                <h3>Mentorship & Tutoring</h3>
-                <p>Dedicate time to instructing and mentoring students in foundational programming languages, web development, and physics.</p>
+                <h3>API Design & Contract Strategy</h3>
+                <p>Designed strict API contracts with DTO mapping, standard request validation, standardized responses, and centralized exception handling.</p>
               </div>
-              <div className="achv-badge">COMMUNITY</div>
+              <div className="achv-badge">ARCHITECTURE</div>
             </div>
           </div>
         </div>
@@ -388,10 +400,10 @@ const App = () => {
         <div className="footer-divider"></div>
         <div className="footer-bottom">
           <div className="footer-links">
-            <a href="mailto:dasnilesh832@gmail.com">email</a>
+            <a href="mailto:nileshdas.work@gmail.com">email</a>
             <a href="https://github.com/Nilesh123-45" target="_blank" rel="noreferrer">github</a>
-            <a href="https://www.linkedin.com/in/nileshdasneel" target="_blank" rel="noreferrer">linkedin</a>
-            <a href="#">x</a>
+            <a href="https://www.linkedin.com/in/nileshdasneil" target="_blank" rel="noreferrer">linkedin</a>
+            <a href="tel:+917377544513">phone</a>
             <a href="#">studio</a>
           </div>
           <div className="footer-credits">
