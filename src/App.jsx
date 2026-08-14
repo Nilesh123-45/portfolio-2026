@@ -154,8 +154,8 @@ const App = () => {
               view my work ↓
             </button>
             <a 
-              href="/Nilesh_Das_Resume.pdf" 
-              download="Nilesh_Das_Resume.pdf" 
+              href="/CV_Nilesh_Das_Java_Backend_3.7yrs_latest.pdf" 
+              download="CV_Nilesh_Das_Java_Backend_3.7yrs_latest.pdf" 
               className="btn-outline" 
               style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}
             >
